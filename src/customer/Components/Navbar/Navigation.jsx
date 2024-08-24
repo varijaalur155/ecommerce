@@ -190,7 +190,8 @@ export default function Navigation() {
                               {section.items.map((item) => (
                                 <li key={item.name} className="flow-root">
                                   <p className="-m-2 block p-2 text-gray-500">
-                                    {"item.name"}
+                                    {item.name
+                                   }
                                   </p>
                                 </li>
                               ))}
