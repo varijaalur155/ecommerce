@@ -158,7 +158,14 @@ export default function Navigation() {
                                 />
                               </div>
                               <a
-                                href={item.href}
+                                onClick={() =>
+                                  handleCategoryClick(
+                                    category,
+                                    section,
+                                    item,
+                                    close
+                                  )
+                                }
                                 className="mt-6 block font-medium text-gray-900"
                               >
                                 <span
@@ -189,7 +196,15 @@ export default function Navigation() {
                             >
                               {section.items.map((item) => (
                                 <li key={item.name} className="flow-root">
-                                  <p className="-m-2 block p-2 text-gray-500">
+                                  <p onClick={() =>
+                                                    handleCategoryClick(
+                                                      category,
+                                                      section,
+                                                      item,
+                                                      close
+                                                    )
+                                                  }className="-m-2 block p-2 text-gray-500">
+
                                     {item.name
                                    }
                                   </p>
@@ -328,7 +343,15 @@ export default function Navigation() {
                                             />
                                           </div>
                                           <a
-                                            href={item.href}
+                                            onClick={() =>
+                                              handleCategoryClick(
+                                                category,
+                                                section,
+                                                item,
+                                                close
+                                              )
+                                            }
+                                            
                                             className="mt-6 block font-medium text-gray-900"
                                           >
                                             <span
