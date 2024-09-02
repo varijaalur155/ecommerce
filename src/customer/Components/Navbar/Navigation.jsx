@@ -161,10 +161,8 @@ export default function Navigation() {
                                 onClick={() =>
                                   handleCategoryClick(
                                     category,
-                                    section,
-                                    item,
-                                    close
-                                  )
+                                     item,
+                                    )
                                 }
                                 className="mt-6 block font-medium text-gray-900"
                               >
@@ -201,8 +199,7 @@ export default function Navigation() {
                                                       category,
                                                       section,
                                                       item,
-                                                      close
-                                                    )
+                                                      )
                                                   }className="-m-2 block p-2 text-gray-500">
 
                                     {item.name
@@ -346,12 +343,11 @@ export default function Navigation() {
                                             onClick={() =>
                                               handleCategoryClick(
                                                 category,
-                                                section,
                                                 item,
                                                 close
                                               )
                                             }
-                                            
+
                                             className="mt-6 block font-medium text-gray-900"
                                           >
                                             <span
