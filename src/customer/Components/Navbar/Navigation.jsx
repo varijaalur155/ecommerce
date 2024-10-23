@@ -55,7 +55,7 @@ export default function Navigation() {
 
   const handleCategoryClick = (category, section, item, close) => {
     navigate(`/${category.id}/${section.id}/${item.id}`);
-    close();
+    if (close) close();
   };
 
   useEffect(() => {
@@ -161,7 +161,9 @@ export default function Navigation() {
                                 onClick={() =>
                                   handleCategoryClick(
                                     category,
+                                    section,
                                      item,
+                                     setOpen(false)
                                     )
                                 }
                                 className="mt-6 block font-medium text-gray-900"
@@ -199,11 +201,11 @@ export default function Navigation() {
                                                       category,
                                                       section,
                                                       item,
+                                                      setOpen
                                                       )
                                                   }className="-m-2 block p-2 text-gray-500">
 
-                                    {item.name
-                                   }
+                                    {item.name}
                                   </p>
                                 </li>
                               ))}
@@ -343,6 +345,7 @@ export default function Navigation() {
                                             onClick={() =>
                                               handleCategoryClick(
                                                 category,
+                                                section,
                                                 item,
                                                 close
                                               )
