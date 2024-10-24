@@ -161,7 +161,7 @@ export default function Navigation() {
                                 onClick={() =>
                                   handleCategoryClick(
                                     category,
-                                    section,
+                                     null,
                                      item,
                                      setOpen(false)
                                     )
@@ -345,7 +345,7 @@ export default function Navigation() {
                                             onClick={() =>
                                               handleCategoryClick(
                                                 category,
-                                                section,
+                                                null,
                                                 item,
                                                 close
                                               )
@@ -392,7 +392,7 @@ export default function Navigation() {
                                                   onClick={() =>
                                                     handleCategoryClick(
                                                       category,
-                                                      section,
+                                                      null,
                                                       item,
                                                       close
                                                     )
